@@ -1,0 +1,11 @@
+// Last updated: 12/09/2025, 19:18:26
+class Solution {
+    public int findDelayedArrivalTime(int newArrivalTime, int delayedTime) {
+        int arrival = 0;
+        arrival = newArrivalTime + delayedTime;
+        if (arrival >= 24) {
+            arrival = arrival % 24;
+        }
+        return arrival;
+    }
+}
